@@ -182,6 +182,10 @@ Use `Category: Specific topic` for content-slide titles. Choose the category by 
 
 A concrete opening question can stand alone, such as *Where has the green chair been?* Use the paper title on the cover and retain the closing slide.
 
+### Multi-stage engineering methods
+
+Show the full architecture first, then focus on one stage of the same figure at a time. Put **INPUT** and **OUTPUT** in a consistent position, such as two columns below a thin rule. Name the observation, state, or decision passed between stages with short noun phrases. Use one or two sentences beside the figure to explain the transformation. Include thresholds, cue weights, or fallback branches only when the audience needs them to understand the mechanism or interpret the evidence.
+
 ### Equations in paper talks
 
 Prefer the equation as printed in the paper. Keep its notation, subscripts, and equation number, and explain the key symbols on the slide. Label any supplementary derivation, simplified example, or implementation-specific formula by its source.
