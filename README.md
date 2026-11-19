@@ -182,6 +182,10 @@ Use `Category: Specific topic` for content-slide titles. Choose the category by 
 
 A concrete opening question can stand alone, such as *Where has the green chair been?* Use the paper title on the cover and retain the closing slide.
 
+### Equations in paper talks
+
+Prefer the equation as printed in the paper. Keep its notation, subscripts, and equation number, and explain the key symbols on the slide. Label any supplementary derivation, simplified example, or implementation-specific formula by its source.
+
 ## Header Logos and Long Titles
 
 The frame header shows a secondary logo (RCL by default) beside the MBZUAI mark. Change or remove it in the preamble:
