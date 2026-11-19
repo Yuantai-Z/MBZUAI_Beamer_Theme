@@ -176,6 +176,12 @@ cp -r beamerthemeMBZUAI/ ~/Library/texmf/tex/latex/beamer/
 
 The `.tex.in` file uses `@@NAME@@` placeholders for the companion initializer. New projects fetch the template and theme from this repository, record the resolved Git commit, and keep a local copy so the generated deck remains reproducible. Existing projects can refresh the theme files without overwriting their paper-specific `main.tex`.
 
+### Naming paper-talk slides
+
+Use `Category: Specific topic` for content-slide titles. Choose the category by the job of the slide. Use `Method` for a mechanism or pipeline stage, `Experiment` for a protocol, comparison, or ablation, and `Message` for an interpretation or takeaway. For example, `Method: Cross-session matching`, `Experiment: Ablation study`, and `Message: Findings and limitations`. State the result in the figure, table, or takeaway beneath the title.
+
+A concrete opening question can stand alone, such as *Where has the green chair been?* Use the paper title on the cover and retain the closing slide.
+
 ## Header Logos and Long Titles
 
 The frame header shows a secondary logo (RCL by default) beside the MBZUAI mark. Change or remove it in the preamble:

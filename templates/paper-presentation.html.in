@@ -66,13 +66,15 @@
 
   <!--
     Build an argument, not a copy of the paper's section order.
+    Title content slides "Category: Specific topic". An opening question can stand alone.
+    Use Method for mechanisms, Experiment for evaluations, and Message for the lesson or interpretation.
     One visual anchor per slide; text only supports it. Do not repeat what the
     figure, the title, or another slide already says. No "see Slide N" references.
   -->
 
   <!-- ─────────────────────────── Question ─────────────────────────── -->
   <section class="slide" data-section="Question">
-    <h2>The question in one sentence</h2>
+    <h2>What problem does the paper address?</h2>
     <figure class="nonumber">
       <!-- <img src="figures/teaser.png" style="max-height:400px" alt="Teaser"> -->
       <div class="placeholder" style="height:380px">Teaser figure: input and output at a glance.</div>
@@ -86,7 +88,7 @@
   <!-- ─────────────────────────── Method ─────────────────────────── -->
   <!-- Show the full architecture once, then one focus crop per stage. -->
   <section class="slide" data-section="Method">
-    <h2>The pipeline in one picture</h2>
+    <h2>Method: System overview</h2>
     <figure class="nonumber">
       <!-- <img src="figures/overview.png" style="max-height:440px" alt="Method overview"> -->
       <div class="placeholder" style="height:420px">Full architecture figure, legible size.</div>
@@ -102,7 +104,7 @@
     per window. Keep the stage's input and output inside the window.
   -->
   <section class="slide" data-section="Method">
-    <h2>Stage 1 turns raw input into features</h2>
+    <h2>Method: Feature extraction</h2>
     <div class="columns c">
       <div class="column" style="--w:58%">
         <div style="position:relative">
@@ -130,7 +132,7 @@
     Delete this slide when the equation does not advance the explanation.
   -->
   <section class="slide" data-section="Method">
-    <h2>Training fits the predictor to targets</h2>
+    <h2>Method: Training objective</h2>
     <div class="equation" id="eq:main">
       \widehat y_t=f_\theta(x_{1:t},c),
       \qquad
@@ -148,7 +150,7 @@
 
   <!-- ─────────────────────────── Evidence ─────────────────────────── -->
   <section class="slide" data-section="Evidence">
-    <h2>The evaluation tests the thesis</h2>
+    <h2>Experiment: Evaluation protocol</h2>
     <div class="columns small">
       <div class="column">
         <h4>Protocol</h4>
@@ -166,10 +168,10 @@
     Reproduce the paper's table completely: all rows and baselines, no synthetic
     rows, the paper's bold/underline meaning. Split a large table or use a
     smaller font instead of selecting rows. Add a caveat only if it changes how
-    a number on this slide is read. The title must be supported by this table.
+    a number on this slide is read. Support the takeaway with the values shown in this table.
   -->
   <section class="slide" data-section="Evidence">
-    <h2>A claim this table visibly supports</h2>
+    <h2>Experiment: Baseline comparison</h2>
     <figure class="table nonumber">
       <table class="footnotesize">
         <thead><tr><th class="l">Method</th><th>Metric A ↓</th><th>Metric B ↑</th></tr></thead>
@@ -186,7 +188,7 @@
 
   <!-- ─────────────────────────── Assessment ─────────────────────────── -->
   <section class="slide" data-section="Assessment">
-    <h2>What remains open</h2>
+    <h2>Message: Limitations</h2>
     <div class="columns small">
       <div class="column">
         <h4>Method limits</h4>
@@ -201,7 +203,7 @@
   </section>
 
   <section class="slide" data-section="Assessment">
-    <h2>Takeaways</h2>
+    <h2>Message: Key findings</h2>
     <ol>
       <li>One transferable lesson.</li>
       <li>One open problem.</li>
