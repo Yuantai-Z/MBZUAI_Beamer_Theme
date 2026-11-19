@@ -186,6 +186,8 @@ A concrete opening question can stand alone, such as *Where has the green chair 
 
 Show the full architecture first, then focus on one stage of the same figure at a time. Put **INPUT** and **OUTPUT** in a consistent position, such as two columns below a thin rule. Name the observation, state, or decision passed between stages with short noun phrases. Use one or two sentences beside the figure to explain the transformation. Include thresholds, cue weights, or fallback branches only when the audience needs them to understand the mechanism or interpret the evidence.
 
+Preserve tables that define a method, the dataset overview, and the evidence behind the main results and ablations. Prefer a legible crop from the paper PDF for figures and tables. Keep headings, units, legends, and interpretive footnotes visible, with the original figure or table number. Place a mechanism’s equation beside its empirical illustration when they answer the same question.
+
 ### Equations in paper talks
 
 Prefer the equation as printed in the paper. Keep its notation, subscripts, and equation number, and explain the key symbols on the slide. Label any supplementary derivation, simplified example, or implementation-specific formula by its source.
