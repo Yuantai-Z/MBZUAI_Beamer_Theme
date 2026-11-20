@@ -158,7 +158,7 @@ body.mbz-print .fragment { opacity: 1 !important; visibility: visible !important
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 0 calc(var(--pad-x) * 0.75) 0 calc(var(--pad-x) * 0.75);
+  padding: 0 32px 0 calc(var(--pad-x) * 0.75);
   gap: 24px;
 }
 .mbz-header::before,
@@ -209,8 +209,9 @@ body.mbz-print .fragment { opacity: 1 !important; visibility: visible !important
   gap: 14px;
 }
 .mbz-logos img { display: block; }
-.mbz-header .mbz-logos img { height: 44px; width: auto; }
-.mbz-header .mbz-logos img.rcl { height: 40px; }
+.mbz-header .mbz-logos { align-self: flex-start; margin-top: 28px; gap: 10px; }
+.mbz-header .mbz-logos img { height: 28px; width: auto; }
+.mbz-header .mbz-logos .sep { height: 22px; }
 .mbz-logos .sep {
   width: 1px;
   height: 38px;

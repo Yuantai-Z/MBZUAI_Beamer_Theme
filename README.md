@@ -194,7 +194,7 @@ Prefer the equation as printed in the paper. Keep its notation, subscripts, and 
 
 ## Header Logos and Long Titles
 
-The frame header shows a secondary logo (RCL by default) beside the MBZUAI mark. Change or remove it in the preamble:
+The frame header shows a secondary logo (RCL by default) beside the MBZUAI mark. On a 1280 × 720 content slide, each mark is 28 px high with its original proportions. The group sits 32 px from the right and 28 px from the top, including on slides with long titles. Beamer scales these dimensions with the slide. Change or remove the secondary logo in the preamble:
 
 ```latex
 \headerlogo{assets/my-group-logo.pdf}  % replace

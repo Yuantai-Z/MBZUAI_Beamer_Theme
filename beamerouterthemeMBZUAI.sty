@@ -30,14 +30,17 @@
     \headerlogo{rcl-logo-dark.pdf}%
 }
 \newcommand{\headerlogo}[1]{\renewcommand{\mbzuai@headerlogo}{#1}}
+% Header geometry matches the HTML slide master at 1280 x 720.
+\newcommand{\mbzuai@headerlogoh}{0.038889\paperheight}% 28/720
+\newcommand{\mbzuai@headerinset}{0.025\paperwidth}% 32/1280
 \newcommand{\mbzuai@headerlogos}{%
     \ifx\mbzuai@headerlogo\empty\else
-        \raisebox{0.25em}{\includegraphics[height=1.4em]{\mbzuai@headerlogo}}%
-        \hspace{0.6em}%
-        \raisebox{0.3em}{\textcolor{mbzuai-sand}{\rule{0.4pt}{1.2em}}}%
-        \hspace{0.6em}%
+        \includegraphics[height=\mbzuai@headerlogoh]{\mbzuai@headerlogo}%
+        \hspace{0.0078125\paperwidth}%
+        \raisebox{0.004167\paperheight}{\textcolor{mbzuai-sand}{\rule{0.00078125\paperwidth}{0.030556\paperheight}}}%
+        \hspace{0.0078125\paperwidth}%
     \fi
-    \raisebox{0.2em}{\includegraphics[height=1.5em]{\mbzuai@primaryheaderlogo}}%
+    \includegraphics[height=\mbzuai@headerlogoh]{\mbzuai@primaryheaderlogo}%
 }
 \newsavebox{\mbzuai@logobox}
 \newsavebox{\mbzuai@titlebox}
@@ -63,7 +66,7 @@
         \fi
         \sbox{\mbzuai@logobox}{\mbzuai@headerlogos}%
         \sbox{\mbzuai@titlebox}{\usebeamerfont{frametitle}\insertframetitle}%
-        \setlength{\mbzuai@titleroom}{\dimexpr\paperwidth-4em-\wd\mbzuai@logobox\relax}%
+        \setlength{\mbzuai@titleroom}{\dimexpr\paperwidth-1.5em-\mbzuai@headerinset-0.01875\paperwidth-\wd\mbzuai@logobox\relax}%
         \ifdim\wd\mbzuai@titlebox>\mbzuai@titleroom
             \PackageWarningNoLine{beamerouterthemeMBZUAI}{Frame title too wide by
                 \the\dimexpr\wd\mbzuai@titlebox-\mbzuai@titleroom\relax;
@@ -73,10 +76,10 @@
         \fi
         % Title text with bottom spacing via raisebox
         \raisebox{0.4em}{\usebox{\mbzuai@titlebox}}%
-        \hfill
-        % Logos on the right (secondary | MBZUAI)
-        \usebox{\mbzuai@logobox}%
-        \hspace{1.5em}%
+        \tikz[remember picture,overlay]{%
+            \node[anchor=north east,inner sep=0,outer sep=0]
+                at ([xshift=-\mbzuai@headerinset,yshift=-\mbzuai@headerlogoh]current page.north east)
+                {\usebox{\mbzuai@logobox}};}%
     \end{beamercolorbox}%
     \nointerlineskip
     % Sand separator line (overlay, no extra space)
