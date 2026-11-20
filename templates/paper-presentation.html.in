@@ -66,15 +66,15 @@
 
   <!--
     Build an argument, not a copy of the paper's section order.
-    Title content slides "Category: Specific topic". An opening question can stand alone.
+    For each Method title below, copy the relevant section or subsection heading from the paper after the colon.
     Use Method for mechanisms, Experiment for evaluations, and Message for the lesson or interpretation.
     One visual anchor per slide; text only supports it. Do not repeat what the
     figure, the title, or another slide already says. No "see Slide N" references.
   -->
 
-  <!-- ─────────────────────────── Question ─────────────────────────── -->
-  <section class="slide" data-section="Question">
-    <h2>What problem does the paper address?</h2>
+  <!-- ─────────────────────────── Motivation ─────────────────────────── -->
+  <section class="slide" data-section="Motivation">
+    <h2>Motivation: Research problem</h2>
     <figure class="nonumber">
       <!-- <img src="figures/teaser.png" style="max-height:400px" alt="Teaser"> -->
       <div class="placeholder" style="height:380px">Teaser figure: input and output at a glance.</div>

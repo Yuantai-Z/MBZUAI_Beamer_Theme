@@ -167,7 +167,7 @@ cp -r beamerthemeMBZUAI/ ~/Library/texmf/tex/latex/beamer/
 
 - explicit paper-author and presenter attribution;
 - configurable left, center, and right footer fields;
-- visual-first question, pipeline, method-stage, evaluation, full-table result, and assessment frame patterns;
+- visual-first motivation, pipeline, method-stage, evaluation, full-table result, and assessment frame patterns;
 - a `\focuscrop` macro that dims an overview figure except for one stage, so the full architecture can be shown once and then revisited stage by stage;
 - compact frame-level source locators;
 - the standard MBZUAI title and closing frames.
@@ -178,9 +178,7 @@ The `.tex.in` file uses `@@NAME@@` placeholders for the companion initializer. N
 
 ### Naming paper-talk slides
 
-Use `Category: Specific topic` for content-slide titles. Choose the category by the job of the slide. Use `Method` for a mechanism or pipeline stage, `Experiment` for a protocol, comparison, or ablation, and `Message` for an interpretation or takeaway. For example, `Method: Cross-session matching`, `Experiment: Ablation study`, and `Message: Findings and limitations`. State the result in the figure, table, or takeaway beneath the title.
-
-A concrete opening question can stand alone, such as *Where has the green chair been?* Use the paper title on the cover and retain the closing slide.
+Use the paper title on the cover. Give the motivation slide a topical heading and introduce the research question in its body. For method slides, use `Method: <paper section or subsection title>`. Copy the most specific applicable heading with its original wording and capitalization, e.g. `Method: IMU Coordinate Frame`. If the paper has no corresponding heading, use the author's name for the mechanism. Use `Experiment: Specific topic` for evaluations and `Message: Specific topic` for takeaways. Retain the closing slide.
 
 ### Multi-stage engineering methods
 

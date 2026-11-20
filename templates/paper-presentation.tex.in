@@ -53,13 +53,13 @@
 }
 
 % Build an argument, not a copy of the paper's section order.
-% Title content slides "Category: Specific topic". An opening question can stand alone.
+% For each Method title below, copy the relevant section or subsection heading from the paper after the colon.
 % Use Method for mechanisms, Experiment for evaluations, and Message for the lesson or interpretation.
 % One visual anchor per frame; text only supports it. Do not repeat what the
 % figure, the title, or another frame already says.
-\section{Question and Thesis}
+\section{Motivation}
 
-\begin{frame}{What problem does the paper address?}
+\begin{frame}{Motivation: Research problem}
   \centering
   % \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{teaser.pdf}
   \fbox{\parbox[c][0.48\textheight][c]{0.8\linewidth}{\centering Teaser figure: input and output at a glance.}}
