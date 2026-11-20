@@ -176,6 +176,8 @@ cp -r beamerthemeMBZUAI/ ~/Library/texmf/tex/latex/beamer/
 
 The `.tex.in` file uses `@@NAME@@` placeholders for the companion initializer. New projects fetch the template and theme from this repository, record the resolved Git commit, and keep a local copy so the generated deck remains reproducible. Existing projects can refresh the theme files without overwriting their paper-specific `main.tex`.
 
+The HTML and Beamer paper-talk starters use the V-HOP content-slide heading: a pale gray band, a dark left-aligned title, and a thin sand-yellow rule along the bottom. Other Beamer decks can select it with `\mbzuailightheading` after loading the theme.
+
 ### Naming paper-talk slides
 
 Use the paper title on the cover. Give the motivation slide a topical heading and introduce the research question in its body. For method slides, use `Method: <paper section or subsection title>`. Copy the most specific applicable heading with its original wording and capitalization, e.g. `Method: IMU Coordinate Frame`. If the paper has no corresponding heading, use the author's name for the mechanism. Use `Experiment: Specific topic` for evaluations and `Message: Specific topic` for takeaways. Retain the closing slide.

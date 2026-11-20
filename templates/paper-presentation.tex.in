@@ -6,6 +6,7 @@
 \usepackage{pifont}
 \usepackage{tikz}
 \usetheme{MBZUAI}
+\mbzuailightheading
 \graphicspath{{assets/}{figures/}{paper-source/}}
 
 \setbeamertemplate{navigation symbols}{}

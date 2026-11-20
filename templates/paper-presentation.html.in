@@ -12,6 +12,12 @@
 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <link rel="stylesheet" href="theme/mbzuai-slides.css">
+<style>
+.mbz-header { background: #eff3f5; }
+.mbz-header .frametitle { color: #182b3f; }
+.mbz-header::before { opacity: .03; }
+.mbz-header img { filter: brightness(.28); }
+</style>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="theme/mbzuai-slides.js"></script>
 

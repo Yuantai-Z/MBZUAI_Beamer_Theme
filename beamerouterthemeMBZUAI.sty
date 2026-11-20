@@ -18,7 +18,17 @@
 % ── Header logos ─────────────────────────────────────────────────────────────
 % \headerlogo{<file>} sets the secondary logo left of the MBZUAI mark;
 % \headerlogo{} removes it and gives the frame title more room.
+\newif\ifmbzuai@lightheading
+\newcommand{\mbzuai@primaryheaderlogo}{logo_sand.pdf}
 \newcommand{\mbzuai@headerlogo}{rcl-logo-sand.pdf}
+\newcommand{\mbzuailightheading}{%
+    \mbzuai@lightheadingtrue
+    \definecolor{mbzuai-heading-bg}{HTML}{EFF3F5}%
+    \definecolor{mbzuai-heading-text}{HTML}{182B3F}%
+    \setbeamercolor{frametitle}{bg=mbzuai-heading-bg,fg=mbzuai-heading-text}%
+    \renewcommand{\mbzuai@primaryheaderlogo}{logo_dark.pdf}%
+    \headerlogo{rcl-logo-dark.pdf}%
+}
 \newcommand{\headerlogo}[1]{\renewcommand{\mbzuai@headerlogo}{#1}}
 \newcommand{\mbzuai@headerlogos}{%
     \ifx\mbzuai@headerlogo\empty\else
@@ -27,7 +37,7 @@
         \raisebox{0.3em}{\textcolor{mbzuai-sand}{\rule{0.4pt}{1.2em}}}%
         \hspace{0.6em}%
     \fi
-    \raisebox{0.2em}{\includegraphics[height=1.5em]{logo_sand.pdf}}%
+    \raisebox{0.2em}{\includegraphics[height=1.5em]{\mbzuai@primaryheaderlogo}}%
 }
 \newsavebox{\mbzuai@logobox}
 \newsavebox{\mbzuai@titlebox}
@@ -41,7 +51,8 @@
     \nointerlineskip
     % Outer box: full banner height, no depth (banner extends to bottom)
     \begin{beamercolorbox}[wd=\paperwidth, ht=2em, dp=0.0em, leftskip=1.5em]{frametitle}%
-        % Composite banner overlay (zero width, doesn't affect layout)
+        % The light heading uses the color box background directly.
+        \ifmbzuai@lightheading\else
         \hbox to0pt{%
             \tikz{
                 \node[anchor=north west, inner sep=0]
@@ -49,6 +60,7 @@
                     {\includegraphics[width=\paperwidth]{banner-bg.pdf}};
             }%
         \hss}%
+        \fi
         \sbox{\mbzuai@logobox}{\mbzuai@headerlogos}%
         \sbox{\mbzuai@titlebox}{\usebeamerfont{frametitle}\insertframetitle}%
         \setlength{\mbzuai@titleroom}{\dimexpr\paperwidth-4em-\wd\mbzuai@logobox\relax}%
