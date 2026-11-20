@@ -34,7 +34,7 @@
 
 \title[@@SHORT_TITLE@@]{@@TITLE@@}
 \subtitle{@@SUBTITLE@@}
-\author[@@PRESENTER@@]{Paper by @@AUTHORS@@ -- Presented by \textit{@@PRESENTER@@}}
+\author{Paper by @@AUTHORS@@}
 \institute{@@VENUE@@}
 \date{@@DATE@@}
 

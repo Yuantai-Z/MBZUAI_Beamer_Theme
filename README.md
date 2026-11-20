@@ -165,7 +165,7 @@ cp -r beamerthemeMBZUAI/ ~/Library/texmf/tex/latex/beamer/
 
 `templates/paper-presentation.tex.in` provides an evidence-driven 16:9 paper-talk starter used by the companion [paper-presentation-slides skill](https://github.com/MicDZ/paper-presentation-slides-skill). It includes:
 
-- explicit paper-author and presenter attribution;
+- paper-author attribution on the cover;
 - configurable left, center, and right footer fields;
 - visual-first motivation, pipeline, method-stage, evaluation, full-table result, and assessment frame patterns;
 - a `\focuscrop` macro that dims an overview figure except for one stage, so the full architecture can be shown once and then revisited stage by stage;
